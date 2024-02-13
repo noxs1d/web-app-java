@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class AboutCompanyController {
     @GetMapping("/about")
     public String AboutCompanyBlog(Model model){
-        model.addAttribute("about-title","About");
+        model.addAttribute("abouttitle","About");
         return "about";
     }
 

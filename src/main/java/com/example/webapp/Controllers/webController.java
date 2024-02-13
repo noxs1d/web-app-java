@@ -14,9 +14,9 @@ public class webController {
         return "home";
     }
 
-    @GetMapping("/about-company")
+    @GetMapping("/contact")
     public String about(Model model){
-        model.addAttribute("about-company","О Компании");
-        return "about";
+        model.addAttribute("aboutcompany","О Компании");
+        return "contact";
     }
 }
