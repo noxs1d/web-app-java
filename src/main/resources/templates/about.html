@@ -12,6 +12,11 @@
     <h1>
         About
     </h1>
+    <div th:each="el : ${posts}" class="alert alert-info mt-2">
+        <h3 th:text="el.title"></h3>
+        <h5 th:text="el.anons"></h5>
+        <a href="'/blog/'+ ${el.id}">More</a>
+    </div>
 </div>
 <footer class="pt-4 my-md-5 pt-md-5 border-top" th:insert="blocks/footer::footer">
 </footer>
